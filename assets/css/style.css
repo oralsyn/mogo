@@ -1,6 +1,6 @@
-body{ 
+body{
  margin: 0;
- font-family: 'Montserrat', sans-serif; 
+ font-family: 'Montserrat', sans-serif;
  /* font-family: 'Kaushan Script', cursive; */
  font-size: 15px;
  line-height: 1.6;
@@ -15,8 +15,15 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   margin: 0;
-  
-  
+}
+
+hr{
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background: #e5e5e5;
+    margin: 40px 0;
 }
 
 /* =============== container =============== */
@@ -45,13 +52,13 @@ h1, h2, h3, h4, h5, h6{
   margin: 0 auto;
   /* border: 2px solid red; */
   text-align: center;
-  
-  
+
+
 }
 .intro__title{
   font-size: 150px;
   font-weight: 700;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   line-height: 1;
   color: #fff;
 }
@@ -69,14 +76,14 @@ h1, h2, h3, h4, h5, h6{
 
 .intro__suptitle{
   margin-bottom: 20px;
-  
+
   font-size: 72px;
   color: #fff;
   font-family: 'Kaushan Script', cursive;
 }
 /* =============== header ===============*/
 
-.header{  
+.header{
   width: 100%;
   padding-top: 10px;
   /* border: 2px solid #00ff4b; */
@@ -91,7 +98,7 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 /* =============== header__logo  MoGo ===============*/
 
@@ -105,7 +112,7 @@ h1, h2, h3, h4, h5, h6{
 /* =============== nav =============== */
 .nav{
   font-size: 14px;
-  text-transform: uppercase;   
+  text-transform: uppercase;
 }
 
 .nav__link{
@@ -114,9 +121,9 @@ h1, h2, h3, h4, h5, h6{
   margin: 0 10px;
   position: relative;
   color: #fff;
-  text-decoration: none; 
+  text-decoration: none;
   transition: .2s linear;
-  
+
 }
 
 
@@ -158,7 +165,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .btn:hover{
   background-color: #fff;
-  color: #333; 
+  color: #333;
 }
 
 /* =============== slider =============== */
@@ -174,16 +181,16 @@ h1, h2, h3, h4, h5, h6{
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
-  
+
 }
 .slider__item{
   width: 23%;
   padding: 20px 0;
   position: relative;
-  border-top: 3px solid #fff; 
+  border-top: 3px solid #fff;
   text-transform: uppercase;
   color: #fff;
-  font-size: 18px;  
+  font-size: 18px;
   opacity: .5;
 }
 
@@ -211,10 +218,17 @@ h1, h2, h3, h4, h5, h6{
   /* border: 2px solid red; */
   padding: 80px 0;
 }
+
+.section--devices{
+    background: url(../images/devices-bg.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
 .section__header{
   width: 100%;
   max-width: 950px;
-  margin: 0 auto 40px;
+  margin: 0 auto 50px;
   text-align: center;
   /* margin-bottom: 40px; */
   /* border: 2px solid red; */
@@ -240,7 +254,7 @@ h1, h2, h3, h4, h5, h6{
 .section__text{
   font-size: 15px;
   color: #999;
-  
+
 }
 
 /* =============== about =============== */
@@ -252,7 +266,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .about__item{
   position: relative;
-  width: 380px;  
+  width: 380px;
   background-color: #95e1d2;
 }
 
@@ -280,7 +294,7 @@ h1, h2, h3, h4, h5, h6{
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 700;  
+  font-weight: 700;
   text-align: center;
   opacity: 0;
   position: absolute;
@@ -301,14 +315,14 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
 }
 .stat__item{
- border-left: 1px solid #b5eae0; 
+ border-left: 1px solid #b5eae0;
  text-align: center;
  padding: 70px 25px;
  flex: 1 1 0;
  color: #fff;
 }
 .stat__item:last-child{
-  border-right: 1px solid #b5eae0; 
+  border-right: 1px solid #b5eae0;
 }
 .stat__count{
   margin-bottom: 10px;
@@ -321,3 +335,66 @@ h1, h2, h3, h4, h5, h6{
   font-size: 14px;
   text-transform: uppercase;
 }
+
+/* =============== services =============== */
+.services{
+    display: flex;
+
+}
+
+
+.services__item{
+    flex: 1 1 0;
+    padding-left: 70px;
+    padding-right: 20px;
+    position: relative;
+/*    border: 2px solid green;*/
+}
+
+
+.services__icon{
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    z-index: 1;
+/*    border: 2px solid red;*/
+}
+
+.services__title{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+
+}
+
+.services__text{
+    font-size: 15px;
+    color: #999;
+/*    border: 2px solid red;*/
+}
+
+/* =============== devices =============== */
+.devices{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+/*    border: 2px solid red;*/
+    position: relative;
+}
+
+
+.devices__item{
+    display: block;
+}
+
+
+.devices__item--iphone{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
+}
+
+
+
